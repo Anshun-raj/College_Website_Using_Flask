@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container " id="gallery">
+        <h2 style="text-align:center;color:red;text-decoration:underline black 0.2rem;padding-top:2rem">Glimpse</h2>
+        <div class="row" style="display:block">
+            <h3 style="text-decoration:underline red 0.2rem;padding-bottom:1rem">Labs</h3>
+             <div class="row1" style="display:flex;margin-bottom:2rem">
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='lab1.jpg')}}"/>
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='lab2.jpg')}}"/>
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='lab3.jpg')}}"/>
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='lab4.jpg')}}"/>
+             </div>
+            <h3 style="text-decoration:underline red 0.2rem;padding-bottom:1rem">FoodCourt</h3>
+             <div class="row2" style="display:flex">
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='food1.jpg')}}"/>
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='food2.jpg')}}"/>
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='food3.jpg')}}"/>
+                 <image style="width:15rem;height:10rem;margin-right:5rem" src="{{url_for('static',filename='food4.jpg')}}"/>
+             </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container " id="contact">
+        <h2 style="text-decoration:underline red 0.2rem;text-align:center;padding-top:1rem;">Contact Us</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <image style="width:35rem;height:35rem;" src="{{url_for('static',filename='contact1.jpg')}}"/>
+            </div>
+            <div class="col-lg-6" style="padding-left:8rem">
+              <form action="http://127.0.0.1:5000/result" method="POST" style="padding-top:8rem;">
+              <input class="form-control" name="name" placeholder="Name" /><br />
+              <input class="form-control" name="phone" placeholder="Phone" /><br />
+              <input class="form-control" name="email" placeholder="E-mail" /><br />
+              <textarea class="form-control" name="text" placeholder="Message..." style="height:160px;"></textarea><br />
+              <input class="btn btn-primary" type="submit" value="Send" /><br /><br />
+            </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

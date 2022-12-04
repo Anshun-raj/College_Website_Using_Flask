@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container " id="home" style="padding-top:2rem">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 style="color:red;text-decoration:underline black 0.2rem">Our Moto</h3>
+                <p style="font-size:1.15rem">Our main motive is to educate each individual of this country.We have been working for this from 2014.We focus more on practical knowledge rather than theory because we know that any concept is meaningless unless it is implemented in the real world.We don't only focus in the field of technology but also encourage the students to do some social work for this we have added one subject in each course.Our main manifesto is to educate the individual so that he can educate others.We can deliver the highest standards of educational content,create positive experiences for all of our stakeholders and realize the potential of anyone who encounters Immerse Education.These values are at the heart of what we do.We ensure that every student leaves our programmes with new-found expertise and enthusiasm to plan the next stages of their education with confidence.We believe that by adhering to these principles, we can deliver the highest standards of educational content, create positive experiences for all of our stakeholders and realize the potential of anyone who encounters Immerse Education.</p>
+            </div>
+            <div class="col-lg-6">
+               <image style="width:33rem;height:33rem;margin-left:8.5rem" src="{{url_for('static',filename='img.jpg')}}"/>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

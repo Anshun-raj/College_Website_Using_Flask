@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container " id="course">
+        <h2 style="text-align:center;color:red;text-decoration:underline black 0.2rem;padding-top:2rem">Our Courses</h2>
+        <div class="row">
+            <div class="Eng" style="margin-top:1rem">
+                <h3 style="text-decoration:underline red 0.2rem;padding-bottom:0.7rem">Engineering</h3>
+                <div class="courseData" style="display:flex;">
+                    <div class="compSci" style="padding-right:14rem">
+                       <h5 style="color:red;">ComputerScience</h5>
+                        <p>B.Tech</p>
+                        <p>M.Tech</p>
+                        <p>Bcs</p>
+                        <p>Mcs</p>
+                    </div>
+                    <div class="Mech" style="padding-right:14rem">
+                        <h5 style="color:red;">Mechanical</h5>
+                        <p>B.Tech</p>
+                        <p>M.Tech</p>
+                        <p>Bsme</p>
+                        <p>Msme</p>
+                    </div>
+                    <div class="Elect" style="padding-right:14rem">
+                        <h5 style="color:red;">Electrical</h5>
+                        <p>B.Tech</p>
+                        <p>M.Tech</p>
+                        <p>Bsc</p>
+                        <p>Msc</p>
+                    </div>
+                     <div class="Civ" style="padding-right:14rem">
+                        <h5 style="color:red;">Civil</h5>
+                        <p>B.Tech</p>
+                        <p>M.Tech</p>
+                        <p>BSCivET</p>
+                        <p>MSCivET</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Med" style="margin-top:2rem">
+                <h3 style="text-decoration:underline red 0.2rem;padding-bottom:0.7rem">Medical</h3>
+                <div class="courseData" style="display:flex">
+                    <div class="medicine" style="padding-right:15rem">
+                        <h5 style="color:red;">Medicine</h5>
+                        <p>MBBS</p>
+                        <p>MD</p>
+                    </div>
+                    <div class="dental" style="padding-right:15rem">
+                        <h5 style="color:red;">Dental</h5>
+                        <p>BDS</p>
+                        <p>MDS</p>
+                    </div>
+                    <div class="homeo" style="padding-right:15rem">
+                        <h5 style="color:red;">Homeopathy</h5>
+                        <p>BHMS</p>
+                        <p>MD(Hom)</p>
+                    </div>
+                    <div class="Veterinary" style="padding-right:15rem">
+                        <h5 style="color:red;">Veterine</h5>
+                        <p>BVSc</p>
+                        <p>MVSc</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
